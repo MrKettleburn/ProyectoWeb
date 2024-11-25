@@ -1,17 +1,13 @@
 <script setup>
-import MainLayout from '../layouts/MainLayout.vue';
-import Header from '../components/Header.vue';
+import Header from './components/Header.vue';
 </script>
 
 
 <template>
   <div>
     <Header></Header>
-    <main>
-      <router-view/>
-    </main> 
+    <router-view/>
   </div>
- 
 </template>
 
 <style scoped></style>
