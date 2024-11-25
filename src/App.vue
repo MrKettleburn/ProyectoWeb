@@ -1,5 +1,5 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue';
+import MainLayout from '../layouts/MainLayout.vue';;
 import Menubar from 'primevue/menubar';
 import { ref } from "vue";
 
@@ -52,17 +52,30 @@ const items = ref([
 import Button from 'primevue/button';
 </script>
 
+
 <template>
-    <div class="card">
-        <Menubar class="barra" :model="items" />
-    </div>
-    <div class="card flex justify-center">
-        <Button label="Submit"></Button>
-    </div>
+  <div>
+    <a href="https://vite.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    </a>
+  </div>
+  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<!-- <style>
-.barra{
-    font: 1em sans-serif;
+<style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-</style> -->
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
+</style>
