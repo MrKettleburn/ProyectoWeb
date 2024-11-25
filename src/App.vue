@@ -2,6 +2,7 @@
 import MainLayout from './layouts/MainLayout.vue';;
 import Menubar from 'primevue/menubar';
 import { ref } from "vue";
+import LoginComp from './components/LoginComp'
 
 const items = ref([
     {
@@ -60,4 +61,5 @@ import Button from 'primevue/button';
     <div class="card flex justify-center">
         <Button label="Submit"></Button>
     </div>
+    <LoginComp/>
 </template>
