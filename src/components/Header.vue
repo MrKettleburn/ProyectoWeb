@@ -10,9 +10,23 @@
   </template>
   
   <style scoped>
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
   nav ul {
+    list-style: none;
     display: flex;
     gap: 1rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  nav ul li a.router-link-active {
+    font-weight: bold;
+    text-decoration: underline;
   }
   </style>
   
