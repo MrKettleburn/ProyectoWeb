@@ -10,6 +10,7 @@
         <input class="inputLogin" type="password" placeholder="Contraseña" required/>
         <ButtonLogin/>
         <router-link to="/register">Registrarse si no tiene cuenta</router-link>
+        <router-view></router-view>
       </form>
     </div>
 </div>
@@ -20,6 +21,7 @@
 <script setup>
    
     import ButtonLogin from './ButtonLogin.vue'
+    
   
 </script>
 
